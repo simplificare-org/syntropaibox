@@ -1,0 +1,28 @@
+[project]
+name = "syntropaibox"
+version = "0.1.2"
+description = "Shared utilities for MCP servers: AST sandboxing, safe execution, and financial tools"
+authors = [{ name = "Hari Bantwal", email = "hpai.bantwal@gmail.com" }]
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.12"
+dependencies = [
+    "hatch>=1.14.1",
+    "httpx>=0.28.1",
+    "pandas>=2.3.1",
+    "pd>=0.0.4",
+    "pydantic>=2.11.7",
+]
+
+[project.urls]
+Homepage = "https://github.com/paihari/syntropaibox"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+packages = ["syntropaibox"]
+
+license = "MIT"
+

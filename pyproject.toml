@@ -1,6 +1,6 @@
 [project]
 name = "syntropaibox"
-version = "0.1.2"
+version = "0.1.4"
 description = "Shared utilities for MCP servers: AST sandboxing, safe execution, and financial tools"
 authors = [{ name = "Hari Bantwal", email = "hpai.bantwal@gmail.com" }]
 readme = "README.md"

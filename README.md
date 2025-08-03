@@ -11,7 +11,7 @@ syntropAIkit is a Python library that provides essential utilities for MCP (Miss
 
 - AST sandboxing
 - Safe code execution
-- Financial tools and utilities
+
 
 ## Installation
 

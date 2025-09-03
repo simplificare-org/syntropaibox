@@ -2,7 +2,6 @@ import ast
 import json
 import logging
 from typing import Any
-# from syntropAIkit.mcp.sandbox import CodeExecutor, create_safe_builtins
 from .sandbox import create_safe_builtins, CodeExecutor
 from abc import ABC, abstractmethod
 import argparse
@@ -14,7 +13,7 @@ logger = logging.getLogger("BaseQuerier")
 
 DEFAULT_ALLOWED_MODULES = {
     "operator", "json", "datetime", "pytz",
-    "dateutil", "re", "time", "sys", "base64", "pydantic", "pandas"
+    "dateutil", "re", "time", "sys", "base64", "pydantic", "pandas", "ImportError"
 }
 
 class BaseSession(ABC):

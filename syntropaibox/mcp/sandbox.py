@@ -2,11 +2,18 @@ import ast
 from typing import List
 
 DEFAULT_BUILTINS_WHITELIST = [
-    "dict", "list", 
-    "tuple", "set", "str", "int", "float", "bool",
+    # Core types
+    "dict", "list", "tuple", "set", "str", "int", "float", "bool",
+    
+    # Common functions
     "len", "max", "min", "sorted", "filter", "map", "sum", "any", "all",
-    "__import__", "hasattr", "getattr", "isinstance", "print"
+    "__import__", "hasattr", "getattr", "isinstance", "print",
+
+    # Exceptions
+    "BaseException", "Exception", "ImportError", "ValueError", "KeyError", "TypeError",
+    "IndexError", "AttributeError", "RuntimeError"
 ]
+
 
 def exec_with_timeout(compiled_code, local_ns, seconds: int = 2):
     import signal
